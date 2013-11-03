@@ -3,7 +3,7 @@
 //  XLibDemo
 //
 //  Created by Konstantin Portnov on 11/3/13.
-//  Copyright (c) 2013 FLC Team. All rights reserved.
+//  Copyright (c) 2013 Konstantin Portnov. All rights reserved.
 //
 
 //################################################################################
