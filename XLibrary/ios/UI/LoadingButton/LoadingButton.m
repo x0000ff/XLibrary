@@ -8,6 +8,7 @@
 //################################################################################
 #import "LoadingButton.h"
 #import "UIView+Hierarchy.h"
+#import "UIImage+XUtilities.h"
 
 //################################################################################
 @interface LoadingButton()

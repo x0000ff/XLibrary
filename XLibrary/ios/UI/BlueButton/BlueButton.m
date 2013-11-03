@@ -8,6 +8,9 @@
 
 //################################################################################
 #import "BlueButton.h"
+#import "UIImage+XUtilities.h"
+#import "UIView+XUtilities.h"
+#import "UIColorFromPhotoshop.h"
 
 //################################################################################
 @implementation BlueButton

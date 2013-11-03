@@ -8,6 +8,8 @@
 
 //################################################################################
 #import "GrayPanel.h"
+#import "UIImage+XUtilities.h"
+#import "UIView+XUtilities.h"
 
 //################################################################################
 @implementation GrayPanel

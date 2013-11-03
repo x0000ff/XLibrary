@@ -11,8 +11,6 @@
 #import "XMacros.h"
 #import "ExtendNSLogFunctionality.h"
 
-#import "XUI.h"
-
 #import "NSArray+JSON.h"
 #import "NSDictionary+JSON.h"
 
@@ -25,5 +23,7 @@
 #import "UIImage+XUtilities.h"
 #import "UIView+Hierarchy.h"
 #import "UIView+XUtilities.h"
+
+#import "XUI.h"
 
 #endif

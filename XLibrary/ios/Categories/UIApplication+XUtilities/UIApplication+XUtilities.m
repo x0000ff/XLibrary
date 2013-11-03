@@ -8,6 +8,7 @@
 
 //################################################################################
 #import "UIApplication+XUtilities.h"
+#import "NSString+XUtilities.h"
 
 //################################################################################
 static NSString * const kTelPrefix = @"tel://";
