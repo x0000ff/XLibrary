@@ -1,9 +1,9 @@
 //
 //  UIView+XUtilities.h
-//  TuInfoBolivia
+//  XLibrary
 //
 //  Created by Konstantin Portnov on 17.10.13.
-//  Copyright (c) 2013 Digevolabs. All rights reserved.
+//  Copyright (c) 2013 Konstantin Portnov. All rights reserved.
 //
 
 //################################################################################

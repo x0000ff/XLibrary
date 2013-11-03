@@ -1,9 +1,9 @@
 //
 //  UIApplication+XUtilities.m
-//  Zyght
+//  XLibrary
 //
 //  Created by Konstantin Portnov on 20.10.13.
-//  Copyright (c) 2013 Digevolabs. All rights reserved.
+//  Copyright (c) 2013 Konstantin Portnov. All rights reserved.
 //
 
 //################################################################################

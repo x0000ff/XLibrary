@@ -1,8 +1,9 @@
 //
 //  XMacros.h
+//  XLibrary
 //
-//  Created by x0000ff on 19.08.11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Konstantin Portnov on 19.08.11.
+//  Copyright (c) 2011 Konstantin Portnov. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

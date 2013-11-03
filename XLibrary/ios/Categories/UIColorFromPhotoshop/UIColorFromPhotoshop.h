@@ -1,8 +1,9 @@
 //
 //  UIColorFromPhotoshop.h
-//  
-//  Created by Константин on 18.09.12.
+//  XLibrary
 //
+//  Created by Konstantin Portnov on 20.10.13.
+//  Copyright (c) 2013 Konstantin Portnov. All rights reserved.
 //
 
 //################################################################################
