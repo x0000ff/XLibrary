@@ -1,13 +1,17 @@
 PODS:
-  - FontAwesomeTools (1.1)
   - MBProgressHUD (0.8)
+  - XLibrary (0.1):
+    - MBProgressHUD (~> 0.8)
 
 DEPENDENCIES:
-  - FontAwesomeTools (~> 1.1)
-  - MBProgressHUD (~> 0.8)
+  - XLibrary (from `https://github.com/x0000ff/XLibrary.git`)
+
+EXTERNAL SOURCES:
+  XLibrary:
+    :git: https://github.com/x0000ff/XLibrary.git
 
 SPEC CHECKSUMS:
-  FontAwesomeTools: 6d6c985b4be4e5757fafcaf750e9218b8c326111
   MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
+  XLibrary: b1357241029448a0219f3d533dcae327d00720d5
 
 COCOAPODS: 0.26.2
