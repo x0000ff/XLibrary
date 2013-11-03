@@ -39,3 +39,4 @@ cpd-output.*
 *~
 *.autosave
 
+Podfile.lock
