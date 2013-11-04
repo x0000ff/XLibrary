@@ -18,6 +18,7 @@
 - (void) applyCornerRadius:(float)radius
 {
     self.layer.cornerRadius = radius;
+    self.clipsToBounds = YES;
 }
 
 //################################################################################
