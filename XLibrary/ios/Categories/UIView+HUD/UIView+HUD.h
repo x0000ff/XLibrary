@@ -21,6 +21,7 @@ static NSTimeInterval const kHudDelay_Long = 4.0;
 // Designed method / Main method
 //################################################################################
 - (MBProgressHUD *) showHudWithText:(NSString *)text detailsText:(NSString *)detailsText image:(UIImage *)image activity:(BOOL)activity;
+- (MBProgressHUD *) showHudWithText:(NSString *)text detailsText:(NSString *)detailsText customView:(UIView *)customView activity:(BOOL)activity;
 
 - (void) hideAllHudsAnimated:(BOOL)animated;
 - (void) hideAllHudsAnimated:(BOOL)animated afterDelay:(NSTimeInterval)delay;

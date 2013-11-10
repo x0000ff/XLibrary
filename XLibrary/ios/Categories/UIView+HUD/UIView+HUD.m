@@ -98,6 +98,30 @@ static NSString * const kFailIconImageName = @"xic-error";
 }
 
 //################################################################################
+- (MBProgressHUD *) showHudWithText:(NSString *)text detailsText:(NSString *)detailsText customView:(UIView *)customView activity:(BOOL)activity
+{
+    //    [self hideAllHudsAnimated:YES];
+    
+    MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:self animated:YES];
+	hud.animationType = MBProgressHUDAnimationZoom;
+    hud.labelText = text;
+    hud.detailsLabelText = detailsText;
+    
+    if (customView)
+    {
+        hud.customView = customView;
+        hud.mode = MBProgressHUDModeCustomView;
+    }
+    else
+    {
+        hud.mode = activity ? MBProgressHUDModeIndeterminate : MBProgressHUDModeText;
+    }
+    hud.removeFromSuperViewOnHide = YES;
+    
+    return hud;
+}
+
+//################################################################################
 - (MBProgressHUD *) showHudWithText:(NSString *)text detailsText:(NSString *)detailsText image:(UIImage *)image activity:(BOOL)activity
 {
 //    [self hideAllHudsAnimated:YES];
