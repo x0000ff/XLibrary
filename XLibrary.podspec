@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "XLibrary"
-  s.version      = "0.1.7"
+  s.version      = "0.1.8"
   s.summary      = "Utilities by x0000ff"
   s.homepage     = "https://github.com/x0000ff/XLibrary"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
@@ -15,5 +15,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.framework  = 'QuartzCore', 'CoreGraphics'
   s.dependency 'MBProgressHUD',	'~> 0.8'
+  s.dependency 'UIImage-Categories', '~> 0.0.1'
 #  s.dependency 'FontAwesomeTools', '~> 1.1'
 end
