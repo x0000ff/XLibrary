@@ -11,5 +11,7 @@
 #import "LoadingButton.h"
 #import "BlueButton.h"
 #import "GrayPanel.h"
+#import "InstagramSharer.h"
+#import "XIndicator.h"
 
 #endif
