@@ -12,6 +12,6 @@
 #import "BlueButton.h"
 #import "GrayPanel.h"
 #import "InstagramSharer.h"
-#import "XIndicator.h"
+#import "XActivityIndicatorView.h"
 
 #endif
