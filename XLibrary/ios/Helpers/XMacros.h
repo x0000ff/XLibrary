@@ -12,7 +12,15 @@
  Useful macroses
  */
 
-#define X_RunOnMainThread() if (![NSThread isMainThread]) { dispatch_sync(dispatch_get_main_queue(), ^{ [self performSelector:_cmd]; }); return; };
+#define SuppressPerformSelectorLeakWarning(Stuff) \
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+Stuff; \
+_Pragma("clang diagnostic pop") \
+} while (0);
+
+#define X_RunOnMainThread() if (![NSThread isMainThread]) { dispatch_sync(dispatch_get_main_queue(), ^{ SuppressPerformSelectorLeakWarning( [self performSelector:_cmd]; ) }); return; };
 
 #define X_IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define X_IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
