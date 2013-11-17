@@ -12,6 +12,8 @@
  Useful macroses
  */
 
+#define X_RunOnMainThread() if (![NSThread isMainThread]) { dispatch_sync(dispatch_get_main_queue(), ^{ [self performSelector:_cmd]; }); return; };
+
 #define X_IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define X_IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 #define X_IS_IPHONE_5 (X_IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 568.0f)
