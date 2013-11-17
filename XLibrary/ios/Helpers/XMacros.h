@@ -12,6 +12,11 @@
  Useful macroses
  */
 
+#define X_IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define X_IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define X_IS_IPHONE_5 (X_IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 568.0f)
+#define X_IS_RETINA ([[UIScreen mainScreen] scale] == 2.0f)
+
 #define X_RELEASE_AND_NIL(__POINTER) { [__POINTER release]; __POINTER = nil; }
 
 #define X_ASYNC_HIGH(...)       dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{ __VA_ARGS__ })
