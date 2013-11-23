@@ -73,6 +73,8 @@ static NSTimeInterval kDefaultAnimationDuration = 2.0f; // in seconds
     if(self)
     {
         self.image = image;
+        self.frame = CGRectMake(0,0, image.size.width,image.size.height);
+        self.fitFrame = self.fitFrame;
     }
     
     return self;
