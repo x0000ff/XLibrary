@@ -16,6 +16,7 @@
 - (id)   firstObject;
 - (BOOL) isNonEmpty;
 - (id) xobjectAtIndex:(NSUInteger)index;
+- (NSArray *)reversedArray;
 
 //################################################################################
 @end
