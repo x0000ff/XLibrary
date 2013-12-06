@@ -14,6 +14,9 @@
 
 //################################################################################
 + (BOOL) dialNumber:(NSString *)phoneNumber;
++ (BOOL) canDialNumber:(NSString *)phoneNumber;
++ (NSURL *)phoneUrlFromNumber:(NSString *)phoneNumber;
+
 + (BOOL) openUrlStringX:(NSString *)urlString;
 + (BOOL) openUrlX:(NSURL *)url;
 

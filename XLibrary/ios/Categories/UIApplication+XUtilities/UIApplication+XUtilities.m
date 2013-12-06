@@ -17,7 +17,14 @@ static NSString * const kTelPrefix = @"tel://";
 @implementation UIApplication (XUtilities)
 
 //################################################################################
-+ (BOOL) dialNumber:(NSString *)phoneNumber
++ (BOOL) canDialNumber:(NSString *)phoneNumber
+{
+    NSURL * phoneNumberUrl = [self phoneUrlFromNumber:phoneNumber];
+    return ([[UIApplication sharedApplication] canOpenURL:phoneNumberUrl]);
+}
+
+//################################################################################
++ (NSURL *)phoneUrlFromNumber:(NSString *)phoneNumber
 {
     phoneNumber = [phoneNumber stringByReplacingOccurrencesOfString:@" " withString:@""];
     
@@ -29,13 +36,19 @@ static NSString * const kTelPrefix = @"tel://";
     }
     
     NSURL * phoneNumberUrl = [NSURL URLWithString:phoneNumber];
-    
+    return phoneNumberUrl;
+}
+
+//################################################################################
++ (BOOL) dialNumber:(NSString *)phoneNumber
+{
+    NSURL * phoneNumberUrl = [self phoneUrlFromNumber:phoneNumber];
     if ([[UIApplication sharedApplication] canOpenURL:phoneNumberUrl])
     {
         [[UIApplication sharedApplication] openURL:phoneNumberUrl];
         return YES;
     }
-
+    
     return NO;
 }
 
@@ -50,7 +63,7 @@ static NSString * const kTelPrefix = @"tel://";
 {
     if (!url) return NO;
     if (![url.absoluteString nonEmpty]) return NO;
-
+    
     if ([[UIApplication sharedApplication] canOpenURL:url])
     {
         [[UIApplication sharedApplication] openURL:url];
