@@ -10,7 +10,7 @@
 #import "MBProgressHUD.h"
 
 //################################################################################
-static NSTimeInterval const kHudDelay_Short = 2.0;
+static NSTimeInterval const kHudDelay_Short = 1.0;
 static NSTimeInterval const kHudDelay_Medium = 3.0;
 static NSTimeInterval const kHudDelay_Long = 4.0;
 
