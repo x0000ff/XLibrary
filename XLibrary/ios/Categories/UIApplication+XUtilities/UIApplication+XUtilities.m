@@ -28,7 +28,7 @@ static NSString * const kTelPrefix = @"tel://";
 {
     phoneNumber = [phoneNumber stringByReplacingOccurrencesOfString:@" " withString:@""];
     
-    if (![phoneNumber nonEmpty]) return NO;
+    if (![phoneNumber nonEmpty]) return nil;
     
     if (![phoneNumber hasPrefix:kTelPrefix])
     {
