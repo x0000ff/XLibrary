@@ -26,7 +26,7 @@
     
     BOOL canBeConverted = [jsonString canBeConvertedToEncoding:encoding];
     
-    if (!canBeConverted) return NO;
+    if (!canBeConverted) return nil;
     NSData * jsonData = [jsonString dataUsingEncoding:encoding];
     
     id jsonObject = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
