@@ -1,3 +1,3 @@
 platform :ios, '6.1'
 
-pod 'XLibrary', { :git => 'https://github.com/x0000ff/XLibrary.git', :tag => "0.1.17" }
+pod 'XLibrary', { :git => 'https://github.com/x0000ff/XLibrary.git', :tag => "0.1.18" }
