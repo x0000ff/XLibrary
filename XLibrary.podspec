@@ -5,8 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/x0000ff/XLibrary"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Konstantin Portnov" => "x0000ff@gmail.com" }
-  #s.source       = { :git => "https://github.com/x0000ff/XLibrary.git", :tag => s.version.to_s }
-  s.source       = { :git => "https://github.com/x0000ff/XLibrary.git" }
+  s.source       = { :git => "https://github.com/x0000ff/XLibrary.git", :tag => s.version.to_s }
   s.platform     = :ios, '6.1'
   # s.source_files = 'XLibrary/**/*.{h,m}"
   s.source_files = "XLibrary/**/*.{h,m}"
